@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>quiz</title>
+    <style>
+        body{background-color: rgba(0, 0, 0, 0.678);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;}
+        #display{margin: 1px;}
+        button{margin: 4px 2px;
+            padding: 15px 32px;
+            background-color: rgb(206, 187, 187);
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 20px;}
+        #display{border: 2.5px, solid, rgb(243, 234, 234);
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.411);
+            margin: 10px;}
+        h2,button,label,h1 {
+            font-family: "Georgia", serif;
+            font-size: 28px;
+            font-weight: bold;}
+        h2,h1{color: rgb(207, 147, 147);}
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #c49b9b;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+        }
+        input[type="radio"]:checked {
+            background-color: #555;
+            border: 2px solid #bd8e8e;
+            box-shadow: inset 0 0 0 4px #e1c5c5;
+        }
+        label {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        input[type="radio"]:hover {
+            border-color: #b49999;
+        }
+        label {
+            font-size: 16px;
+            color: #b16f6f;
+            margin-left: 8px;
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.3s ease;
+        }
+        label:hover {
+            color: #c2132a;
+        }
+        input[type="radio"]:checked + label {
+            font-weight: bold;
+            color: #c2132a;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="display">
+        <button id="start" type="button" onclick="fetching()">Start</button>
+    </div>
+</body>
+</html>
